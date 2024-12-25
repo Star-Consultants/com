@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Outsourcing Company Homepage</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            margin: 0;
+            font-family: 'Roboto', sans-serif;
+            background-color: #f0f4f8;
+            color: #333;
+        }
+        .header {
+            text-align: center;
+            padding: 50px;
+            background-color: #001f3f;
+            color: white;
+        }
+        .header h1 {
+            font-size: 3em;
+            margin: 0;
+        }
+        .quote {
+            text-align: center;
+            font-style: italic;
+            font-size: 1.5em;
+            margin: 20px 0;
+            background: linear-gradient(to right, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.5));
+            padding: 20px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        }
+        .about {
+            display: flex;
+            justify-content: space-around;
+            padding: 50px;
+        }
+        .about .mission {
+            flex: 1;
+            padding: 20px;
+        }
+        .about .services {
+            flex: 1;
+            padding: 20px;
+        }
+        .about img {
+            width: 100%;
+            border-radius: 10px;
+        }
+        .button {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #007bff;
+            color: white;
+            text-decoration: none;
+            border-radius: 5px;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="header">
+        <h1>Outsourcing Solutions Inc.</h1>
+    </div>
+
+    <div class="quote">
+        <p>'Outsourcing isn’t just a trend; it’s the key to unlocking innovation and efficiency.'</p>
+    </div>
+
+    <div class="about">
+        <div class="mission">
+            <h2>About Us</h2>
+            <p>Our mission is to provide innovative outsourcing solutions that empower businesses to achieve their goals efficiently and effectively.</p>
+            <a href="#learn-more" class="button">Learn More</a>
+        </div>
+        <div class="services">
+            <h2>Our Services</h2>
+            <img src="carousel-image.jpg" alt="Services Carousel">
+            <ul>
+                <li>Service 1</li>
+                <li>Service 2</li>
+                <li>Service 3</li>
+            </ul>
+        </div>
+    </div>
+
+</body>
+</html>

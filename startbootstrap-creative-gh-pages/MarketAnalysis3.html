@@ -1,0 +1,501 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Star Consultants - Market Analysis Services</title>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Lato:wght@400&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <style>
+        body {
+            font-family: 'Lato', sans-serif;
+            background-color: #121212;
+            color: #000000;
+        }
+        h1, h2, h3, h4, h5, h6 {
+            font-family: 'Playfair Display', serif;
+        }
+        .navbar {
+            background-color: #1E1E1E;
+        }
+        .navbar-brand, .nav-link {
+            color: #000000;
+        }
+        .hero-section {
+            background: url('https://t3.ftcdn.net/jpg/09/57/08/90/360_F_957089041_ag1aIESBTs8cLL6BXT6MrlEb8V6ROifP.jpg'); background-size:cover;;
+            color: #ffffff;
+            text-align: center;
+            padding: 100px 0;
+        }
+        .hero-section h1 {
+            font-size: 4rem;
+        }
+        .hero-section p {
+            font-size: 1.25rem;
+        }
+        .content-section {
+            padding: 60px 0;
+        }
+        .estimate-section {
+            background-color: #222;
+            color: #fff;
+            padding: 40px;
+            border-radius: 10px;
+            margin-bottom: 20px;
+        }
+        .estimate-section input[type="range"] {
+            width: 100%;
+            margin: 20px 0;
+        }
+        .estimate-section h4 {
+            margin-top: 20px;
+            font-size: 1.25rem;
+        }
+        .savings-box {
+            text-align: center;
+        }
+        footer {
+            background-color: #1E1E1E;
+            color: #E0E0E0;
+            text-align: center;
+            padding: 20px 0;
+        }
+        .modal-content {
+            color: #333;
+        }
+        .review {
+            background-color: #8b8080;
+            padding: 10px;
+            border-radius: 5px;
+            margin-bottom: 10px;
+        }
+        .review img {
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .review h5 {
+            color: #FFA726;
+        }
+        .btn-primary {
+            background-color: #FFA726;
+            border: none;
+        }
+    </style>
+</head>
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <a class="navbar-brand" href="#">Star Consultants</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item"><a class="nav-link" href="#">contact</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Services</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">About Us</a></li>
+                <li class="nav-item"><a class="nav-link" href="#">Contact</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <section class="hero-section">
+        <h1>Market Analysis Services</h1>
+        <p>Unlock valuable insights and make data-driven decisions with our comprehensive market analysis services.</p>
+    </section>
+
+    <style>
+        .content-section {
+            text-align: center;
+            color: white; /* Set text color to white for visibility against dark background */
+        }
+    
+        h2 {
+            font-size: 2rem; /* Increase heading size */
+            margin-bottom: 20px; /* Add space below heading */
+            color: #f8f9fa; /* Light color for heading text */
+        }
+    
+        p {
+            font-size: 1.2rem; /* Increase paragraph size for better readability */
+            line-height: 1.6; /* Increase line height for better readability */
+        }
+    
+        .estimate-section {
+            margin-top: 40px; /* Add space above estimate section */
+        }
+    
+        .container {
+            max-width: 800px; /* Set max width for the content */
+            margin: 0 auto; /* Center the content */
+        }
+    </style>
+    
+    <!DOCTYPE html>
+    <html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+        <style>
+            .content-section {
+                text-align: center;
+                color: white; /* Set text color to white for visibility against dark background */
+            }
+    
+            h2 {
+                font-size: 2rem; /* Increase heading size */
+                margin-bottom: 40px; /* Add extra space below heading */
+                color: #f8f9fa; /* Light color for heading text */
+            }
+    
+            p {
+                font-size: 1.2rem; /* Increase paragraph size for better readability */
+                line-height: 1.6; /* Increase line height for better readability */
+            }
+    
+            .estimate-section {
+                margin-top: 40px; /* Add space above estimate section */
+            }
+    
+            .container {
+                max-width: 800px; /* Set max width for the content */
+                margin: 0 auto; /* Center the content */
+            }
+    
+            .estimate-section h3 {
+                margin-bottom: 20px; /* Add space below the heading */
+            }
+    
+            #savings {
+                color: rgb(15, 255, 55); /* Make the savings amount red */
+            }
+    
+            .dollar-icon {
+                color: green; /
+                margin-right: 5px; /* Add some space to the right of the icon */
+            }
+        </style>
+    </head>
+    <body>
+        <section class="content-section container">
+            <h2>About Our Market Analysis Services</h2>
+            <p>At Star Consultants, we provide in-depth market analysis services designed to help businesses understand their market environment, identify opportunities, and make informed strategic decisions. Our team of experienced analysts uses advanced tools and methodologies to deliver actionable insights that drive growth and competitive advantage.
+                .</p>
+    
+            <div class="estimate-section">
+                <h3>Estimate Your Annual Savings</h3>
+                <div class="d-flex justify-content-center">
+                    <div class="p-4 bg-dark text-white rounded" style="flex: 1; max-width: 600px;">
+                        <h4 class="text-center">How much did you spend on Market Analysis per year?</h4>
+                        <div class="d-flex justify-content-between align-items-center">
+                            <span id="spendingDisplay"><i class="fas fa-dollar-sign dollar-icon"></i>$0</span>
+                            <input type="range" class="form-control" id="currentSpending" min="0" max="100000" step="1000" value="0" oninput="updateSavings()">
+                        </div>
+                        <h4 class="text-center mt-4">With Star Consultants, you will save:</h4>
+                        <h1 class="display-4 text-center" id="savings"><i class=""></i>$0</h1>
+                        <div class="savings-box">
+                            <p class="text-center">This means you save <strong id="percentageSavings">0%</strong> of your current spending!</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    
+        <script>
+            function updateSavings() {
+                const currentSpending = document.getElementById('currentSpending').value;
+                const savings = currentSpending * 0.8; // 20% savings
+                document.getElementById('spendingDisplay').innerHTML = `<i class="fas fa-dollar-sign dollar-icon"></i>$${currentSpending}`;
+                document.getElementById('savings').innerHTML = `<i class="fas fa-dollar-sign dollar-icon"></i>$${savings.toFixed(2)}`;
+                document.getElementById('percentageSavings').innerText = '20%';
+            }
+        </script>
+    </body>
+    </html>
+    
+<!-- Contact Form Section -->
+<section id="contact" style="padding: 80px 20px; background-color: #f0f4f8;">
+    <div style="max-width: 800px; margin: auto; font-family: Arial, sans-serif; text-align: center;">
+      <!-- Header -->
+      <h2 style="color: #333; font-size: 36px; margin-bottom: 20px;">Let's Get In Touch!</h2>
+      <p style="color: #555; font-size: 18px; margin-bottom: 40px;">
+        Have a question or need assistance? Drop us a message, and we'll respond shortly!
+      </p>
+  
+      <!-- Button to Open the Modal -->
+      <button id="openFormButton" style="background-color: #007bff; color: white; padding: 14px 28px; border: none; border-radius: 25px; font-size: 18px; cursor: pointer; transition: all 0.3s;">
+        Get In Touch
+      </button>
+    </div>
+  </section>
+  
+  <!-- The Modal -->
+  <div id="contactModal" style="display: none; position: fixed; top: 0; left: 0; width: 100%; height: 100%; background-color: rgba(0, 0, 0, 0.5); justify-content: center; align-items: center;">
+    <div style="background: white; padding: 30px; border-radius: 15px; width: 90%; max-width: 600px;">
+      <!-- Contact Form -->
+      <h2 style="color: #333; font-size: 24px; text-align: center; margin-bottom: 20px;">Contact Us</h2>
+      <form
+        id="contactForm"
+        action="https://formspree.io/f/xgvvwapw"
+        method="POST"
+        style="font-family: Arial, sans-serif; text-align: left;"
+      >
+        <!-- Name Field -->
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #555;">Your Name</label>
+          <input
+            type="text"
+            name="name"
+            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px;"
+            placeholder="Enter your full name"
+            required
+          >
+        </div>
+  
+        <!-- Email Field -->
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #555;">Your Email</label>
+          <input
+            type="email"
+            name="email"
+            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px;"
+            placeholder="Enter your email address"
+            required
+          >
+        </div>
+        
+        <!-- Include the intl-tel-input library -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css" />
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js"></script>
+
+<!-- Phone Number Field -->
+<div style="margin-bottom: 20px;">
+  <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #555;">Your Phone Number</label>
+  <input
+    type="tel"
+    id="phoneNumber"
+    name="phone"
+    style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px;"
+    placeholder="Enter your phone number"
+    required
+  >
+</div>
+
+<script>
+  // Initialize the intl-tel-input plugin
+  const phoneInputField = document.getElementById('phoneNumber');
+  const phoneInput = window.intlTelInput(phoneInputField, {
+    initialCountry: "auto",
+    separateDialCode: true, // Ensures the country code is displayed separately
+    geoIpLookup: function(callback) {
+      fetch('https://ipinfo.io/json?token=<YOUR_TOKEN>') // Replace <YOUR_TOKEN> with your ipinfo.io token
+        .then((resp) => resp.json())
+        .then((data) => callback(data.country))
+        .catch(() => callback('us'));
+    },
+    utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js", // Load utils script for formatting
+  });
+</script>
+
+  
+        <!-- Message Field -->
+        <div style="margin-bottom: 20px;">
+          <label style="display: block; font-weight: bold; margin-bottom: 5px; color: #555;">Your Message</label>
+          <textarea
+            name="message"
+            style="width: 100%; padding: 12px; border: 1px solid #ddd; border-radius: 10px; font-size: 16px; height: 120px;"
+            placeholder="Write your message here"
+            required
+          ></textarea>
+        </div>
+  
+        
+        <!-- Submit Button -->
+        <div>
+          <button
+            type="submit"
+            style="background-color: #007bff; color: white; padding: 14px 28px; border: none; border-radius: 25px; font-size: 18px; cursor: pointer; transition: all 0.3s;"
+          >
+            Send Message
+          </button>
+        </div>
+      </form>
+  
+      <!-- Success Message -->
+      <div id="successMessage" style="display: none; margin-top: 20px; color: #28a745; font-size: 18px;">
+        Thank you! Your message has been sent successfully.
+      </div>
+  
+      <!-- Close Button -->
+      <button id="closeModalButton" style="position: absolute; top: 10px; right: 10px; background-color: red; color: white; padding: 10px; border-radius: 50%; font-size: 20px; cursor: pointer;">
+        X
+      </button>
+    </div>
+  </div>
+  
+  <!-- JavaScript -->
+  <script>
+    // Open Modal
+    document.getElementById('openFormButton').addEventListener('click', function() {
+      document.getElementById('contactModal').style.display = 'flex';
+    });
+  
+    // Close Modal
+    document.getElementById('closeModalButton').addEventListener('click', function() {
+      document.getElementById('contactModal').style.display = 'none';
+    });
+  
+    // Intercept the form submission
+    const form = document.getElementById('contactForm');
+    const successMessage = document.getElementById('successMessage');
+  
+    form.addEventListener('submit', async function (event) {
+      event.preventDefault(); // Prevent default form submission
+      const formData = new FormData(form);
+  
+      try {
+        // Send form data to Formspree
+        const response = await fetch(form.action, {
+          method: form.method,
+          body: formData,
+          headers: {
+            Accept: 'application/json',
+          },
+        });
+  
+        if (response.ok) {
+          // Show success message
+          successMessage.style.display = 'block';
+          form.reset(); // Clear form fields
+  
+          // Hide success message after 10 seconds
+          setTimeout(function() {
+            successMessage.style.display = 'none';
+            document.getElementById('contactModal').style.display = 'none'; // Close the modal
+          }, 10000);
+        } else {
+          alert('Oops! There was a problem submitting your form.');
+        }
+      } catch (error) {
+        alert('Oops! There was a problem submitting your form.');
+      }
+    });
+  </script>
+  
+        <!-- Include Font Awesome for icons -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" />
+
+<h2 class="mt-5" style="text-align: center; font-size: 24px; color: #ffffff; margin-bottom: 30px;"><bold>Client Reviews</bold></h2>
+
+<div style="max-width: 900px; margin: 0 auto;">
+  <div class="review" style="display: flex; align-items: flex-start; margin-bottom: 20px; padding: 15px; border: 1px solid #181616; border-radius: 8px; background: #1d1a1a;">
+    <i class="fas fa-user-circle" style="font-size: 40px; color: #007bff; margin-right: 15px;"></i>
+    <div>
+      <h5 style="margin: 0; font-size: 18px; color: #007bff;">Emily Brown, Marketing Director at Growth Solutions</h5>
+      <p style="margin-top: 8px; font-size: 16px; color: #f3f2f2;">"Star Consultants' market analysis provided us with critical insights that helped shape our marketing strategy. Their expertise is unmatched!</p>
+    </div>
+  </div>
+  
+  <div class="review" style="display: flex; align-items: flex-start; margin-bottom: 20px; padding: 15px; border: 1px solid #1d1b1b; border-radius: 8px; background: #2c2a2a;">
+    <i class="fas fa-user-circle" style="font-size: 40px; color: #007bff; margin-right: 15px;"></i>
+    <div>
+      <h5 style="margin: 0; font-size: 18px; color: #007bff;">Michael Green, CEO at Innovate Inc</h5>
+      <p style="margin-top: 8px; font-size: 16px; color: #f3efef;">The competitive analysis from Star Consultants gave us a clear understanding of our market position and how to improve. Highly recommend their services.</p>
+    </div>
+  </div>
+  
+  <div class="review" style="display: flex; align-items: flex-start; margin-bottom: 20px; padding: 15px; border: 1px solid #1f1c1c; border-radius: 8px; background: #201e1e;">
+    <i class="fas fa-user-circle" style="font-size: 40px; color: #007bff; margin-right: 15px;"></i>
+    <div>
+      <h5 style="margin: 0; font-size: 18px; color: #007bff;">Sarah Lee, Business Development Manager at Expansion Corp</h5>
+      <p style="margin-top: 8px; font-size: 16px; color: #eee7e7;">The market forecasting provided by Star Consultants has been invaluable in our strategic planning. Their accurate predictions have helped us stay ahead of the curve.</p>
+    </div>
+  </div>
+</div>
+
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Star Consultants. All rights reserved.</p>
+    </footer>
+
+    <div id="contactFormModal" class="modal fade" tabindex="-1" role="dialog">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">Contact Us</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="contactForm" action="https://formspree.io/f/YOUR_FORM_ID" method="POST">
+                        <div class="form-group">
+                            <label for="name">Name</label>
+                            <input type="text" class="form-control" id="name" name="name" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="email">Email</label>
+                            <input type="email" class="form-control" id="email" name="email" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="phone">Phone Number</label>
+                            <input type="tel" class="form-control" id="phone" name="phone" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Message</label>
+                            <textarea class="form-control" id="message" name="message" rows="4" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Send Message</button>
+                        <p class="mt-3">Sales team will be in touch with you soon. If immediate, email us now at <a href="mailto:info@starconsultants.online">info@starconsultants.online</a>.</p>
+                    </form>
+                    <div id="successMessage" style="display: none; margin-top: 20px; color: #28a745; font-size: 18px;">
+                        Thank you! Your message has been sent successfully.
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function updateSavings() {
+            const currentSpending = document.getElementById('currentSpending').value;
+            const savings = currentSpending * 0.8;  // Assume 20% savings
+            const percentageSavings = 80;  // Always 80% savings in this example
+
+            document.getElementById('spendingDisplay').innerText = `$${parseInt(currentSpending).toLocaleString()}`;
+            document.getElementById('savings').innerText = `$${parseInt(savings).toLocaleString()}`;
+            document.getElementById('percentageSavings').innerText = `${percentageSavings}%`;
+        }
+
+        document.getElementById('contactForm').addEventListener('submit', function(event) {
+            event.preventDefault();
+            const form = event.target;
+            const formData = new FormData(form);
+
+            fetch(form.action, {
+                method: form.method,
+                body: formData,
+                headers: {
+                    'Accept': 'application/json'
+                }
+            }).then(response => {
+                if (response.ok) {
+                    form.reset();
+                    document.getElementById('successMessage').style.display = 'block';
+                } else {
+                    alert('There was an issue submitting your form. Please try again.');
+                }
+            }).catch(error => {
+                alert('There was an issue submitting your form. Please try again.');
+            });
+        });
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.3/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+</body>
+</html>
